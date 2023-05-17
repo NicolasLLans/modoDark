@@ -9,6 +9,9 @@ body {
   font-family: "Roboto", sans-serif;
   transition: 0.3s ease all;
 }
+body.dark {
+  background: #111111;
+}
 
 a {
   color: #222222;
@@ -32,6 +35,16 @@ nav {
   border-radius: 5px;
   transition: 0.3s ease all;
   box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+}
+body.dark nav {
+  background: #222222;
+  box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.16);
+}
+body.dark nav a {
+  color: #C8C8C8;
+}
+body.dark nav a:hover {
+  color: #FEFEFE;
 }
 nav .logotipo {
   font-weight: 700;
@@ -105,6 +118,10 @@ nav .enlaces a:hover {
   min-height: 195px;
   margin-top: 50px;
   transition: 0.3s ease all;
+}
+body.dark .grid .card {
+  background: #222222;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.16);
 }
 .grid .card img {
   vertical-align: top;

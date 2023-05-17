@@ -19,6 +19,10 @@ body {
 	background: #F1F1F1;
 	font-family: 'Roboto', sans-serif;
 	transition: .3s ease all;
+
+	&.dark {
+		background: $negro;
+	}
 }
 
 a {
@@ -44,6 +48,17 @@ nav {
 	border-radius: 5px;
 	transition: .3s ease all;
 	box-shadow: $sombraDark;
+
+	body.dark & {
+		background: $grisOscuro;
+		box-shadow: $sombraDark;
+		a{
+			color: $grisClaro;
+			&:hover{
+				color: $blanco;
+			}
+		}
+	}
 
 	.logotipo {
 		font-weight: 700;
@@ -122,6 +137,11 @@ nav {
 		margin-top: 50px;
 		transition: .3s ease all;
 	
+		body.dark & {
+			background: $grisOscuro;
+			box-shadow: $sombraLight;
+		}
+
 		img {
 			vertical-align: top;
 			border-radius: 7px;
